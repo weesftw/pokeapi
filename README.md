@@ -1,45 +1,29 @@
-### Would you like to work with us? Apply [here](https://app.pipefy.com/public_form/840222)!
+# PokeAPI
+A RESTful API for **Pokémon** - [pokeapi.co](https://pokeapi.co)
 
-# Looqbox Backend Challenge
-![Looqbox](https://github.com/looqbox/looqbox-backend-challenge/blob/master/logo.png)
+## About
+<p align="justify">The project focuses on consuming the <b>REST</b> application from PokeAPI. Currently its only function is to abstract the list of objects from the return and transform it into a pokemon model to map their names. However, it is scalable for future updates, implementations, etc.</p>
 
-## Challenge
-In this challenge you will need to build a **Microservice** using the stack below and a provided api.
+    
+## Routes
+| URL | Returns | Features |
+| --- | --- | --- |
+| **/pokemons** | All pokemons  | _Query support_|
 
-We will not use anything from your project other than evaluate your skills and you are free to use this project in your portfolio.
+## Params
 
-## Stack
-We use:
-- Java/Kotlin
-- `Spring Boot` for the framework
-- `Gradle` for dependency management and local deployment
+- **Pokemon's** support params:
 
-## Submitting
-- Make a fork of this repository
-- When you're done send us a pull request
+| URL | Type | Description |
+| --- | --- | --- |
+| **/pokemons?order=** | ['asc', 'length'] | _Order by Lexicographical or length_|
+| **/pokemons?q=** | String | _Find pokemon by using params_|
+| **/pokemons?highlight=** | Boolean | _Find one surprise highlight pokemon_|
 
-# Guidelines
-You need to make a HTTP REST API that 
-- Consumes the [PokeAPI](https://pokeapi.co/) data.
-- Provides an endpoint to query pokemons based on the substring of its name. For example:
-  - Request: `GET /pokemons?q=pidge`
-  - Expected response: ```{"result" : ["pidgey", "pidgeotto", "pidgeot"]}```
-- You need to apply sorting by two algorithms (it is not permitted to use a sorting library, for this particular feature you must implement by yourself). And it’s very important to explain your implemented logic (For instance, you can use inline comments on the source code): 
-  - the pokemon name's length and; 
-  - the pokemon name's alphabetical order 
- 
-- Find a way to indicate the pokemon name highlight regarding the piece of its queried name. For example:
-  - The queried name was `pi`
-  - The highlight object must be ```{"name": "pikachu", "highlight": "<pre>pi</pre>kachu"}``` or ```{"name": "pikachu", "start": 0, "end": 2}```
-- Draw a diagram explaining your architecture
+## Hexagonal Architecture
+![hexagonal-architecture](assets/hexagonal-architecture.svg)
 
-## Bonus points!
-- Design Patterns
-- Unit Testing
-- Dockerize the application
-- Explain the Big-Ω (time complexity) of your sorting algorithms (explain how you calculated them)
+## Technology
 
-## Useful links
-- [Spring Framework](https://spring.io/)
+- [Spring](https://spring.io/)
 - [Gradle](https://gradle.org/)
-- [PokeApi docs](https://pokeapi.co/docs/v2.html)
