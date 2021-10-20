@@ -23,6 +23,10 @@ A RESTful API for **Pokémon** - [pokeapi.co](https://pokeapi.co)
 ## Hexagonal Architecture
 ![hexagonal-architecture](assets/hexagonal-architecture.svg)
 
+## Author
+| [<img src="https://github.com/weesftw.png?size=115" width=115><br><sub>@weesftw</sub>](https://github.com/weesftw) |
+| :---: |
+
 ## Technology
 
 - [Spring](https://spring.io/)
