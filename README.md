@@ -1,5 +1,5 @@
 # PokeAPI
-A RESTful API for **Pokémon** - [pokeapi.co](https://pokeapi.co)
+A REST API for **Pokémon** - [pokeapi.co](https://pokeapi.co)
 
 ## About
 <p align="justify">The project focuses on consuming the <b>REST</b> application from PokeAPI. Currently its only function is to abstract the list of objects from the return and transform it into a pokemon model to map their names. However, it is scalable for future updates, implementations, etc.</p>
